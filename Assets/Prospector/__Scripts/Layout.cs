@@ -42,9 +42,9 @@ public class Layout : MonoBehaviour
         //read in the slots
         SlotDef tSD;
 
-        PT_XMLHashlist slotsX = xml["slot"];
+        PT_XMLHashList slotsX = xml["slot"];
 
-        for (int i = 0; i < slotsX.count; i++)
+        for (int i = 0; i < slotsX.Count; i++)
         {
             tSD = new SlotDef();
             if (slotsX[i].HasAtt("type"))
